@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="en" class="tw-dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcadX | Pharmaceutical Learning Platform</title>
+    <meta name="description"
+        content="Bridging the gap between knowledge and understanding through expert pharmaceutical tutorials" />
+    <link rel="shortcut icon" href="./assets/logo/logo.png" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Master Pharmaceutical Sciences with AcadX" />
+    <meta property="og:description" content="Expert video tutorials and resources for pharmacy students" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://academy-x.co" />
+    <meta property="og:image" content="./assets/og-image.jpg" />
+
+    <link rel="stylesheet" href="css/tailwind-build.css">
+    <link rel="stylesheet" href="css/index.css" />
+
+    <style>
+        :root {
+            --primary-text: #4E4A4A;
+            /* Deep Gray */
+            --background: #ECECE4;
+            /* Pale Beige */
+            --accent: #E7B8A2;
+            /* Peachy Coral */
+            --secondary: #F9E6EB;
+            /* Soft Blush Pink */
+            --borders: #B49A9B;
+            /* Dusty Lavender */
+        }
+
+        .tw-dark {
+            --primary-text: #ECECE4;
+            /* Pale Beige */
+            --background: #4E4A4A;
+            /* Deep Gray */
+            --accent: #E7B8A2;
+            /* Peachy Coral */
+            --secondary: #DAC9C7;
+            /* Light Mauve */
+            --borders: #B49A9B;
+            /* Dusty Lavender */
+        }
+    </style>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+
+<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] 
+            tw-text-black dark:tw-bg-black  dark:tw-text-white">
+
+    <header class="lg:tw-px-4 tw-max-w-[100vw] tw-max-w-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full 
+                    tw-text-gray-700 tw-bg-white dark:tw-text-gray-200 dark:tw-bg-[#17181b] tw-px-[3%] tw-rounded-md lg:tw-max-w-5xl tw-shadow-md dark:tw-shadow-gray-700
+                    lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]">
+        <a class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center" href="#">
+
+
+            <div class="tw-h-[30px] tw-max-w-[100px]">
+                <img src="./assets/logo/logo.png" alt="logo"
+                    class="tw-object-contain tw-h-full tw-w-full dark:tw-invert" />
+            </div>
+            <span class="tw-uppercase tw-text-base tw-font-medium">AcadX</span>
+        </a>
+        <div class="collapsible-header animated-collapse max-lg:tw-shadow-md" id="collapsed-header-items">
+            <nav class="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col 
+                                max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center">
+                <a class="header-links" href="#solutions"> Solutions </a>
+                <a class="header-links" href="https://www.youtube.com/@AcademyX-m4m" target="_blank"> Courses </a>
+
+                <div class="tw-relative tw-flex tw-flex-col tw-place-items-center">
+                    <div id="nav-dropdown-toggle-0"
+                        class="max-lg:tw-max-w-fit tw-flex header-links tw-gap-1  tw-place-items-center">
+                        <span class=""> Features </span>
+                        <i class="tw-text-sm bi bi-chevron-down"></i>
+                    </div>
+                    <nav id="nav-dropdown-list-0" data-open="false" class="tw-scale-0 tw-opacity-0  lg:tw-fixed tw-flex lg:tw-top-[80px] lg:tw-left-1/2 lg:tw--translate-x-1/2 
+                                    tw-w-[90%] tw-rounded-lg max-lg:tw-h-0 max-lg:tw-w-0
+                                    lg:tw-h-[450px] tw-overflow-hidden
+                                     tw-bg-white dark:tw-bg-[#17181B] tw-duration-300 
+                                     tw-transition-opacity tw-transition-height tw-shadow-lg tw-p-4">
+                        <div
+                            class="tw-grid max-xl:tw-flex max-xl:tw-flex-col tw-justify-around tw-grid-cols-2 tw-w-full">
+                            <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                <div class="tw-font-semibold tw-text-3xl">
+                                    <i class="bi bi-list-columns-reverse"></i>
+                                </div>
+                                <div class="tw-flex tw-flex-col tw-gap-2">
+                                    <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Tailored
+                                        Tutorials </div>
+                                    <p>Expertly crafted video tutorials for complex topics</p>
+                                </div>
+                            </a>
+
+                            <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                <div class="tw-font-semibold tw-text-3xl">
+                                    <i class="bi bi-person-check-fill"></i>
+                                </div>
+                                <div class="tw-flex tw-flex-col tw-gap-2">
+                                    <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Expert
+                                        Tutors </div>
+                                    <p class="">Learn from top-notch instructors</p>
+                                </div>
+                            </a>
+
+                            <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                <div class="tw-font-semibold tw-text-3xl">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                                <div class="tw-flex tw-flex-col tw-gap-2">
+                                    <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Convenience
+                                        & Flexibility </div>
+                                    <p class="">Study at your own pace, anytime, anywhere</p>
+                                </div>
+                            </a>
+
+                            <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                <div class="tw-font-semibold tw-text-3xl">
+                                    <i class="bi bi-currency-dollar"></i>
+                                </div>
+                                <div class="tw-flex tw-flex-col tw-gap-2">
+                                    <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                        Affordable Subscription
+                                    </div>
+                                    <p class="">Premium content at a budget-friendly price</p>
+                                </div>
+                            </a>
+
+                            <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                <div class="tw-font-semibold tw-text-3xl">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </div>
+                                <div class="tw-flex tw-flex-col tw-gap-2">
+                                    <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                        High-Quality Videos
+                                    </div>
+                                    <p class="">Comprehensive tutorials breaking down every concept</p>
+                                </div>
+                            </a>
+
+                            <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#">
+                                <div class="tw-font-semibold tw-text-3xl">
+                                    <i class="bi bi-people-fill"></i>
+                                </div>
+                                <div class="tw-flex tw-flex-col tw-gap-2">
+                                    <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                        Exclusive Community
+                                    </div>
+                                    <p class="">Connect with peers and tutors for collaborative learning</p>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <a class="header-links" href="#pricing"> Pricing </a>
+
+            </nav>
+            <div class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full 
+                            max-md:tw-flex-col max-md:tw-place-content-center">
+                <button type="button" onclick="toggleMode()" class="header-links tw-text-gray-600 dark:tw-text-gray-300"
+                    title="toggle-theme" id="theme-toggle">
+                    <i class="bi bi-sun" id="toggle-mode-icon"></i>
+                </button>
+                <a href="https://selar.co" target="_blank" aria-label="Try Pixa Playground" class="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform 
+                                    tw-duration-[0.3s] hover:tw-translate-x-2">
+                    <span>Start Learning Now</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-gray-500 lg:tw-hidden"
+            onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
+    </header>
+
+    <section
+        class="hero-section tw-relative tw-mt-20 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-mt-[100px]"
+        id="hero-section">
+
+        <!-- video container -->
+        <div class="tw-fixed tw-bg-[#000000af] dark:tw-bg-[#80808085] tw-top-0 tw-left-1/2 tw--translate-x-1/2 tw-z-20 tw-transition-opacity
+                tw-duration-300 tw-scale-0 tw-opacity-0 tw-p-2
+                tw-w-full tw-h-full tw-flex tw-place-content-center tw-place-items-center" id="video-container-bg">
+
+            <div class="tw-max-w-[80vw] max-lg:tw-max-w-full max-lg:tw-w-full tw-scale-0 tw-transition-transform tw-duration-500 tw-p-6 tw-rounded-xl  max-lg:tw-px-2 tw-w-full tw-gap-2 tw-shadow-md 
+                            tw-h-[90vh] max-lg:tw-h-auto max-lg:tw-min-h-[400px] tw-bg-white dark:tw-bg-[#16171A] tw-max-h-full
+                            " id="video-container">
+                <div class="tw-w-full tw-flex">
+                    <button type="button" onclick="closeVideo()" class="tw-ml-auto tw-text-xl" title="close">
+                        <i class="bi bi-x-circle-fill"></i>
+                    </button>
+                </div>
+                <div
+                    class="tw-flex tw-w-full  tw-rounded-xl tw-px-[5%] max-md:tw-px-2 tw-min-h-[300px] tw-max-h-[90%] tw-h-full">
+
+                    <div class="tw-relative tw-bg-black tw-min-w-full tw-min-h-full tw-overflow-clip tw-rounded-md">
+                        <!-- add your youtube video link here -->
+                        <iframe
+                            class="tw-absolute tw-top-[50%] tw--translate-y-[50%] tw-left-[50%] tw--translate-x-[50%] tw-w-full tw-h-full"
+                            src="https://www.youtube.com/embed/C-ZqCOHBufI?si=QCDdFTU2zuuB6k3i&amp;controls=0&rel=0&showinfo=0&autoplay=1&loop=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="hero-bg-gradient tw-relative tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4">
+
+            <div
+                class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-1/2 tw-top-[10%] tw-h-[120px] tw-w-[120px]">
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-min-h-[60vh] tw-place-content-center tw-items-center">
+                <h2
+                    class="reveal-up tw-text-center tw-text-7xl tw-font-semibold tw-uppercase tw-leading-[90px] max-lg:tw-text-4xl max-md:tw-leading-snug">
+                    <span class=""> Master Your Courses </span>
+                    <br />
+                    <span class="tw-font-thin tw-font-serif"> with AcadX </span>
+                </h2>
+                <div class="reveal-up tw-mt-8 tw-max-w-[450px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center
+                         tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full">
+                    <!-- Test, Develop and Deploy all your AI models in one place, with Pixa seamless playground interface -->
+                    Are you ready to elevate your academic journey? Join AcadX for expert pharmaceutical tutorials and
+                    resources.
+                </div>
+
+                <div class="reveal-up tw-mt-10 max-md:tw-flex-col tw-flex tw-place-items-center tw-gap-4">
+
+                    <button onclick="openVideo()" class="btn !tw-w-[170px] max-lg:!tw-w-[160px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 tw-flex tw-gap-2 tw-group !tw-bg-transparent !tw-text-black dark:!tw-text-white tw-transition-colors 
+                                        tw-duration-[0.3s] tw-border-[1px] tw-border-black dark:tw-border-white">
+
+                        <div class="tw-relative tw-flex tw-place-items-center tw-place-content-center tw-w-6 tw-h-6">
+                            <div
+                                class="tw-absolute tw-inset-0 tw-top-0 tw-left-0 tw-scale-0 tw-duration-300 group-hover:tw-scale-100 tw-border-2
+                                             tw-border-gray-600 dark:tw-border-gray-200 tw-rounded-full tw-w-full tw-h-full">
+                            </div>
+                            <span class="bi bi-play-circle-fill"></span>
+                        </div>
+                        <span>Watch video</span>
+                    </button>
+
+                    <a href="https://www.youtube.com/@AcademyX-m4m" class="btn tw-group tw-flex tw-items-center tw-gap-2 tw-shadow-lg 
+   tw-min-w-[170px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 
+   tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03] 
+   tw-whitespace-nowrap tw-overflow-visible tw-flex-nowrap">
+                        <span class="tw-whitespace-nowrap">Explore Courses</span>
+                        <i class="bi bi-arrow-right group-hover:tw-translate-x-1 tw-duration-300 tw-flex-shrink-0"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- prompt container -->
+            <div class="reveal-up  tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                id="dashboard-container">
+                <div
+                    class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[5%] tw-h-[200px] tw-w-[200px]">
+                </div>
+
+                <div class="tw-relative tw-max-w-[80%] tw-bg-white dark:tw-bg-black tw-border-[1px] dark:tw-border-[#36393c] lg:tw-w-[1024px]
+                                lg:tw-h-[650px]  tw-flex tw-shadow-xl max-lg:tw-h-[450px] max-lg:tw-w-full
+                                tw-overflow-hidden
+                                tw-min-w-[320px] md:tw-w-full tw-min-h-[450px] tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                    id="dashboard">
+
+                    <div
+                        class="purple-bg-grad tw-max-w-[80%] reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[0%] lg:tw-max-w-[1000px] tw-h-full tw-w-full">
+                    </div>
+                    <div class="animated-border tw-w-full tw-h-full tw-p-[2px]">
+                        <div class="tw-w-full tw-h-full tw-rounded-xl tw-overflow-hidden tw-flex">
+
+                            <div class="tw-min-w-[250px] max-lg:tw-hidden tw-p-2 tw-gap-2 tw-flex tw-flex-col tw-bg-gray-100 
+                                            dark:tw-bg-[#171717] tw-h-full">
+                                <!-- <h3 class="tw-text-xl tw-uppercase">
+                                        Pixa
+                                    </h3> -->
+                                <div class="tw-h-[30px] tw-w-fit tw-max-w-[100px]">
+                                    <img src="./assets/logo/logo.png" alt="logo"
+                                        class="tw-object-contain tw-opacity-80 tw-h-full tw-w-full dark:tw-invert" />
+                                </div>
+                                <div class="tw-flex tw-mt-2 tw-gap-2 tw-flex-col">
+                                    <a href="#why-acadx"
+                                        class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                        <i class="bi bi-question-square"></i>
+                                        <span>Why Choose AcadX?</span>
+                                    </a>
+                                    <a href="#courses"
+                                        class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                        <i class="bi bi-play-circle"></i>
+                                        <span>Our Courses</span>
+                                    </a>
+                                    <a href="#contact"
+                                        class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                        <i class="bi bi-envelope"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                    <a href="#"
+                                        class="tw-flex tw-rounded-sm tw-group tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                        <span>Show all</span>
+                                        <i
+                                            class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover:tw-translate-x-1"></i>
+                                    </a>
+                                </div>
+
+                                <div class="tw-mt-auto tw-w-full tw-flex tw-px-6 tw-place-content-center">
+                                    <a href="https://www.youtube.com/@AcademyX-m4m" class="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] 
+                                                                hover:!tw-bg-black hover:!tw-text-white
+                                                                dark:hover:!tw-bg-white dark:hover:!tw-text-black
+                                                                !tw-border-[1px] !tw-border-black !tw-text-black
+                                                                dark:!tw-border-white dark:!tw-text-white
+                                                                ">
+                                        Explore AcadX
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="tw-flex tw-w-full tw-p-4 tw-bg-white dark:tw-bg-black tw-h-full tw-flex-col"
+                                id="pixa-playground">
+                                <div class="tw-relative tw-w-full tw-flex tw-place-content-center tw-h-full">
+                                    <div
+                                        class="tw-absolute tw-top-[20%] max-lg:tw-top-[30%] tw-left-1/2 tw--translate-x-1/2  tw-w-[150px] tw-h-[150px]">
+                                        <img src="./assets/logo/logo.png"
+                                            class="tw-w-full tw-h-full dark:tw-invert tw-object-contain tw-opacity-20"
+                                            alt="acadx logo">
+                                    </div>
+                                    <div class="prompt-container tw-overflow-y-auto tw-px-[5%] max-lg:tw-px-2 scrollbar max-lg:tw-max-h-[80%] tw-max-h-[550px] 
+                                                    max-lg:tw-mt-12 tw-w-full tw-h-full tw-z-10 tw-flex tw-flex-col"
+                                        id="prompt-container">
+                                        <div
+                                            class="tw-w-full tw-flex tw-text-center tw-flex-col tw-place-content-center">
+                                            <h2 class="tw-text-4xl max-md:tw-text-2xl max-md:tw-mt-3 tw-opacity-80">
+                                                Ask Me About AcadX
+                                            </h2>
+                                            <div class="tw-inline tw-mt-6 max-md:tw-mt-3">
+                                                <span id="prompts-sample"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <form action="" id="prompt-form" onsubmit="return false;"
+                                    class="tw-place-content-center tw-mt-auto tw-h-[50px] tw-p-1 tw-place-items-center 
+                                                tw-justify-around tw-flex tw-gap-1 tw-bottom-2 tw-w-full tw-rounded-md tw-bg-[#f3f4f6] dark:tw-bg-[#171717]">
+                                    <div class="max-lg:tw-absolute tw-z-10 tw-top-1 tw-left-1/2 max-lg:tw--translate-x-1/2 
+                                                    tw-flex tw-flex-col tw-text-sm tw-gap-1 tw-place-content-center">
+                                        <!-- store the value of the dropdown-->
+                                        <button type="button" class="tw-flex tw-gap-5">
+                                            <span class="tw-flex tw-w-fit tw-gap-2 tw-place-items-center">
+                                                <div class="tw-w-[20px] tw-h-[20px]">
+                                                    <img src="./assets/logo/logo.png" alt="acadX"
+                                                        class="dropdown-select-icon dark:tw-invert">
+                                                </div>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <input placeholder="Ask me anything about acadx?" type="text"
+                                        class="tw-p-2 !tw-outline-none tw-bg-transparent tw-border-none tw-w-full tw-placehoder-gray-500
+                                                                    dark:tw-placeholder-opacity-60 dark:tw-placeholder-gray-300 tw-max-w-[80%] tw-h-full" name="prompt">
+                                    <button type="submit" class="btn !tw-bg-[#6366f1] !tw-p-2 !tw-px-3 !tw-text-white"
+                                        title="submit">
+                                        <i class="bi bi-arrow-up"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+            <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
+                Trusted by brands you love
+            </h2>
+
+            <div class="reveal-up carousel-container">
+                <div
+                    class="carousel lg:w-place-content-center tw-mt-10 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+                >
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/google.svg"
+                            alt="Google"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/microsoft.svg"
+                            alt="Microsoft"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/adobe.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/airbnb.svg"
+                            alt="Airbnb"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/stripe.svg"
+                            alt="Stripe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/reddit.svg"
+                            alt="Reddit"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+    <section
+        class="tw-relative tw-flex tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-py-8">
+        <!-- Decorative Background -->
+        <div class="science-bg-grad tw-absolute tw-top-[15%] tw-h-[250px] tw-w-[250px] tw-opacity-50"></div>
+
+        <!-- Added fixed-width container -->
+        <div class="tw-w-full tw-max-w-[1150px] tw-mx-auto reveal-up">
+            <!-- Main Content Container -->
+            <div class="tw-flex tw-items-center tw-gap-16 tw-px-8 max-lg:tw-flex-col max-lg:tw-gap-12">
+                <!-- Image Column -->
+                <div class="max-lg:tw-w-full">
+                    <div class="tw-relative tw-w-full tw-max-w-[600px] tw-p-4 max-lg:tw-p-8">
+                        <img src="./assets/images/home/acadx.jpg" alt="Academy-X Learning Platform"
+                            class="tw-w-full tw-h-auto tw-rounded-3xl tw-shadow-2xl tw-object-cover tw-transform hover:tw-scale-105 tw-transition-transform tw-duration-300">
+                    </div>
+                </div>
+
+                <!-- Text Content Column -->
+                <div class="tw-w-1/2 max-lg:tw-w-full tw-flex tw-flex-col tw-gap-6 tw-px-4">
+                    <h2 class="tw-text-5xl max-lg:tw-text-4xl tw-font-semibold tw-leading-tight">
+                        Master Pharmaceutical Sciences
+                        <br>
+                        <span class="tw-font-serif tw-text-primary">With Academy-X</span>
+                    </h2>
+
+                    <!-- <p class="tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-max-w-[540px]">
+                        Bridge the gap between knowledge and understanding through our expert-crafted video tutorials and 
+                        interactive learning resources.
+                    </p> -->
+
+                    <ul class="tw-space-y-4 tw-text-gray-600 dark:tw-text-gray-400">
+                        <li class="tw-flex tw-items-center tw-gap-3">
+                            <span class="tw-text-primary tw-text-xl">✓</span>
+                            Tailored Video Tutorials: Simplified explanations of complex topics, starting with PCH 331:
+                            Pharmaceutical Organic Chemistry.
+                        </li>
+                        <li class="tw-flex tw-items-center tw-gap-3">
+                            <span class="tw-text-primary tw-text-xl">✓</span>
+                            Expert Tutors: Learn from top-notch instructors passionate about your academic success.
+                        </li>
+                        <li class="tw-flex tw-items-center tw-gap-3">
+                            <span class="tw-text-primary tw-text-xl">✓</span>
+                            Convenience & Flexibility: Study at your own pace, anytime, anywhere.
+                        </li>
+                        <li class="tw-flex tw-items-center tw-gap-3">
+                            <span class="tw-text-primary tw-text-xl">✓</span>
+                            Affordable Subscription: Get premium learning content at a price that fits your budget.
+                        </li>
+                        <li class="tw-flex tw-items-center tw-gap-3">
+                            <span class="tw-text-primary tw-text-xl">✓</span>
+                            High-Quality Videos: Comprehensive tutorials breaking down every concept step by step.
+                        </li>
+                    </ul>
+
+                    <a href="https://www.youtube.com/@AcademyX-m4m" class="btn tw-group tw-flex tw-items-center tw-gap-2 tw-shadow-lg 
+   tw-min-w-[170px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 
+   tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03] 
+   tw-whitespace-nowrap tw-overflow-visible tw-flex-nowrap">
+                        <span class="tw-whitespace-nowrap">Explore Courses</span>
+                        <i class="bi bi-arrow-right group-hover:tw-translate-x-1 tw-duration-300 tw-flex-shrink-0"></i>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <section class="tw-relative tw-flex tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden" id="solutions">
+
+        <div class="tw-mt-8 tw-flex tw-flex-col tw-w-full tw-h-full tw-place-items-center tw-gap-5">
+            <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                <h2 class="tw-text-6xl tw-font-medium max-md:tw-text-3xl tw-p-2">
+                    Experience AcadX
+                </h2>
+                <p class="tw-text-xl tw-text-gray-600">Where Knowledge Meets Mastery</p>
+            </div>
+            
+            <div class="tw-mt-6 tw-flex tw-flex-col tw-max-w-[1150px] max-lg:tw-max-w-full tw-h-full 
+                            tw-p-4 max-lg:tw-place-content-center tw-gap-8 ">
+    
+                <div class="max-xl:tw-flex max-xl:tw-flex-col tw-place-items-center tw-grid tw-grid-cols-3 tw-gap-8 
+                                tw-place-content-center tw-auto-rows-auto">
+                    <!-- Tailored Tutorials Card -->
+                    <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                        <a href="https://www.youtube.com/embed/C-ZqCOHBufI?si=QCDdFTU2zuuB6k3i" target="_blank" class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02]">
+                                <div class="tw-overflow-hidden tw-w-full tw-min-h-[180px] tw-h-[180px] tw-rounded-xl tw-relative">
+                                    <!-- For YouTube/Vimeo Embeds -->
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/C-ZqCOHBufI?si=QCDdFTU2zuuB6k3i&amp;controls=1" 
+                                        class="tw-w-full tw-h-full tw-object-cover" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+                                    
+                                    <!-- Optional: Add a play button overlay -->
+                                    <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-bg-black/20 tw-transition-all hover:tw-bg-black/10">
+                                        <div class="tw-w-16 tw-h-16 tw-bg-white/80 tw-rounded-full tw-flex tw-items-center tw-justify-center">
+                                            <svg class="tw-w-8 tw-h-8 tw-text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Expert-Crafted Tutorials</h2>
+                            <p class="tw-text-base tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                Master complex pharmaceutical concepts through our structured video series. 
+                                Starting with PCH 331, we break down organic chemistry into digestible lessons 
+                                with real-world applications.
+                            </p>
+                            <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                                <span>Explore Courses</span>
+                                <i class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"></i>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- Interactive Learning Card -->
+                    <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                        <a href="#" class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02]">
+                            <div class="tw-w-full tw-min-h-[180px] tw-h-[180px] tw-overflow-hidden tw-rounded-xl">
+                                <img src="./assets/images/home/quizzes.jpg"
+                                     alt="interactive quizzes"
+                                     class="tw-w-full tw-h-auto tw-object-contain tw-rounded-xl">
+                            </div>
+                            <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Interactive Learning</h2>
+                            <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                Reinforce your understanding with curated practice questions, chapter quizzes, 
+                                and case studies that mirror real exam scenarios.
+                            </p>
+                            <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                                <span>Try Sample Quiz</span>
+                                <i class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"></i>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- Community Card -->
+                    <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                        <a href="#" class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02]">
+                                <div class="tw-w-full tw-min-h-[180px] tw-h-[180px] tw-overflow-hidden tw-rounded-xl">
+                                    <img src="./assets/images/home/community_features.jpg"
+                                    class="tw-w-full tw-h-auto tw-object-contain tw-rounded-xl"
+                                     alt="learning community">
+                            </div>
+                            <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Pharmacy Community</h2>
+                            <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                Connect with 300+ level pharmacy students, share notes, and get instant 
+                                clarification from tutors through our exclusive discussion forums.
+                            </p>
+                            <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                                <span>Join Discussions</span>
+                                <i class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Featured Course Card -->
+                <div class="reveal-up tw-w-full md:tw-h-[350px] max-md:tw-min-h-[350px] tw-flex">
+                    <a href="https://www.youtube.com/@AcademyX-m4m" class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                            max-md:tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                            hover:tw-scale-[1.02]">
+                            <div class="tw-w-full tw-min-h-[180px] tw-overflow-hidden tw-rounded-xl tw-mb-6">
+                                <img src="./assets/images/home/pch331.jpg" 
+                                 class="tw-w-full tw-h-auto tw-object-contain tw-rounded-xl"
+                                 alt="PCH 331 course">
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-pr-10 tw-pl-6">
+                            <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">PCH 331 Launch</h2>
+                            <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                Master Pharmaceutical Organic Chemistry with 40+ HD tutorials covering:<br>
+                                • Synthetic Organic Chemistry<br>
+                                • Heterocyclic Compounds<br>
+                                • Advanced Stereochemistry<br>
+                                <span class="tw-text-primary tw-font-medium tw-mt-2">Free Early Access Available!</span>
+                            </p>
+                            <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                                <span>Start Free Trial</span>
+                                <i class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="tw-relative tw-mt-10 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center lg:tw-p-6">
+
+        <div class="reveal-up tw-mt-[5%] tw-flex tw-h-full tw-w-full tw-place-content-center 
+                        tw-gap-2 tw-p-4 max-lg:tw-max-w-full max-lg:tw-flex-col">
+    
+            <div class="tw-relative tw-flex tw-max-w-[30%] max-lg:tw-max-w-full tw-flex-col 
+                            tw-place-items-start tw-gap-4  tw-p-2 max-lg:tw-place-items-center 
+                            max-lg:tw-place-content-center max-lg:tw-w-full">
+                <div
+                    class="tw-top-40 tw-flex tw-flex-col lg:tw-sticky tw-place-items-center tw-max-h-fit tw-max-w-[850px] max-lg:tw-max-h-fit max-lg:tw-max-w-[320px] tw-overflow-hidden">
+                    <h2 class="tw-text-5xl tw-font-serif tw-text-center tw-font-medium  max-md:tw-text-3xl">
+                        Why Choose Academy-X.co?
+                    </h2>
+    
+                    <a href="#signup" class="btn !tw-mt-8 !tw-bg-transparent !tw-text-black 
+                                                !tw-border-[1px] !tw-border-black 
+                                                dark:!tw-border-white dark:!tw-text-white">
+                        Start Learning Now
+                    </a>
+                </div>
+            </div>
+    
+            <div class="tw-flex tw-flex-col tw-gap-10 tw-h-full tw-max-w-1/2 max-lg:tw-max-w-full tw-px-[10%]
+                             max-lg:tw-px-4 max-lg:tw-gap-3 max-lg:tw-w-full lg:tw-top-[20%]
+                             tw-place-items-center">
+                <!-- Tailored Tutorials Card -->
+                <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
+                    <a href="#tutorials" class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl 
+                                    hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all
+                                  tw-p-8 tw-group/card">
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Tailored Tutorials
+                            </h3>
+                            <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                Simplified explanations of complex pharmaceutical chemistry concepts, starting with PCH 331.
+                            </p>
+                            <div class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4">
+                                <span>View Courses</span>
+                                <i class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1
+                                            group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Expert Tutors Card -->
+                <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
+                    <a href="#tutors"
+                        class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl
+                                 hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card">
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Expert Tutors
+                            </h3>
+                            <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                Learn from top-notch instructors passionate about your academic success in pharmacy.
+                            </p>
+                            <div class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4">
+                                <span>Meet Tutors</span>
+                                <i class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1
+                                            group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Flexible Learning Card -->
+                <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
+                    <a href="#flexibility" class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg tw-duration-300 
+                                tw-transition-all dark:tw-shadow-[#171717] tw-p-8 tw-group/card">
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Flexible Learning
+                            </h3>
+                            <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                Study pharmaceutical organic chemistry at your own pace, anytime, anywhere.
+                            </p>
+                            <div class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4">
+                                <span>Learn How</span>
+                                <i class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1
+                                            group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Affordable Subscription Card -->
+                <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
+                    <a href="#pricing" class="tw-flex tw-w-full dark:tw-shadow-[#171717] tw-h-full tw-gap-8 tw-rounded-xl  hover:tw-shadow-lg tw-duration-300 
+                            tw-transition-all tw-p-8 tw-group/card">
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-currency-dollar"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Affordable Plans
+                            </h3>
+                            <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                Premium learning content at prices designed for student budgets.
+                            </p>
+                            <div class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4">
+                                <span>View Plans</span>
+                                <i class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1
+                                            group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Comprehensive Resources Card -->
+                <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
+                    <a href="#resources" class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl dark:tw-shadow-[#171717] hover:tw-shadow-lg tw-duration-300 
+                                tw-transition-all tw-p-8 tw-group/card">
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-collection"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Comprehensive Resources
+                            </h3>
+                            <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                Video tutorials, quizzes, and practice questions for complete understanding.
+                            </p>
+                            <div class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4">
+                                <span>Explore</span>
+                                <i class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1
+                                            group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Exclusive Community Card -->
+                <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
+                    <a href="#community"
+                        class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl 
+                                    hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card">
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Exclusive Community
+                            </h3>
+                            <p class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
+                                Connect with peers and tutors for collaborative learning and support.
+                            </p>
+                            <div class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4">
+                                <span>Join Now</span>
+                                <i class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1
+                                            group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tw-relative tw-flex  tw-w-full tw-min-h-[110vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden">
+        <div class="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-items-center 
+                        tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
+    
+            <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal">
+                Enhanced Learning Experience
+            </h3>
+    
+            <div class="tw-mt-8 tw-relative tw-gap-10 tw-p-4 tw-grid tw-place-items-center tw-grid-cols-3 max-lg:tw-flex max-lg:tw-flex-col">
+    
+                <!-- Interactive Quizzes -->
+                <div class="reveal-up  tw-w-[350px] tw-border-[1px] tw-h-[400px] tw-rounded-md tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] max-md:tw-w-[320px] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+                    <div class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center">
+                        <img src="./assets/images/home/interactive_quizzes.jpg" alt="Interactive quizzes" class="tw-w-auto tw-h-full tw-object-contain">
+                    </div>
+                    <h3 class="tw-text-2xl">Interactive Quizzes</h3>
+                    <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                        Reinforce your understanding with auto-graded quizzes and instant feedback after each module.
+                    </p>
+                </div>
+    
+                <!-- Progress Tracking -->
+                <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-md tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+                    <div class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center">
+                        <img src="./assets/images/home/progress_tracking.jpg" alt="Progress tracking" class="tw-w-auto tw-h-full tw-object-contain">
+                    </div>
+                    <h3 class="tw-text-2xl">Progress Tracking</h3>
+                    <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                        Visualize your learning journey with detailed analytics and milestone achievements.
+                    </p>
+                </div>
+    
+                <!-- Offline Access -->
+                <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-lg tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+                    <div class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center">
+                        <img src="./assets/images/home/offline_access.jpg" alt="Offline access" class="tw-w-auto tw-h-full tw-object-contain">
+                    </div>
+                    <h3 class="tw-text-2xl">Offline Access</h3>
+                    <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                        Download course materials for offline study - perfect for low-connectivity environments.
+                    </p>
+                </div>
+    
+                <!-- Certification -->
+                <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-lg tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+                    <div class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center">
+                        <img src="./assets/images/home/certification.jpg" alt="Certification" class="tw-w-auto tw-h-full tw-object-contain">
+                    </div>
+                    <h3 class="tw-text-2xl">Certification</h3>
+                    <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                        Earn verifiable certificates upon course completion to showcase your pharmaceutical expertise.
+                    </p>
+                </div>
+    
+                <!-- Discussion Forums -->
+                <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-lg tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+                    <div class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center">
+                        <img src="./assets/images/home/discussion_forums.jpg" alt="Discussion forums" class="tw-w-auto tw-h-full tw-object-contain">
+                    </div>
+                    <h3 class="tw-text-2xl">Discussion Forums</h3>
+                    <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                        Collaborate with peers and instructors through dedicated course discussion boards.
+                    </p>
+                </div>
+    
+                <!-- Mobile Learning -->
+                <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-lg tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+                    <div class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center">
+                        <img src="./assets/images/home/mobile_learning.jpg" alt="Mobile learning" class="tw-w-auto tw-h-full tw-object-contain">
+                    </div>
+                    <h3 class="tw-text-2xl">Mobile Learning</h3>
+                    <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                        Access all course materials through our optimized mobile interface for on-the-go learning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]">
+        <h3 class="reveal-up tw-text-4xl tw-font-medium tw-text-center max-md:tw-text-2xl">
+            Join Thousands of Successful Pharmacy Students
+        </h3>
+        
+        <!-- Testimonials -->
+        <div class="tw-mt-20 tw-gap-10 tw-space-y-8  max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3">
+            
+            <!-- Testimonial 1 -->
+            <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                        <img src="./assets/images/people/man2.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Chinedu" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Chinedu Okoro</div>
+                        <div class="tw-text-gray-700 dark:tw-text-gray-300">University of Lagos</div>
+                    </div>
+                </div>
+                <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                    "Academy-X.co transformed how I approach pharmaceutical chemistry. The video tutorials on heterocyclic compounds finally made sense of what I struggled with for months. I aced my PCH 331 exams thanks to their clear explanations!"
+                </p>
+            </div>
+    
+            <!-- Testimonial 2 -->
+            <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                        <img src="./assets/images/people/women.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Amina" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Amina Yusuf</div>
+                        <div class="tw-text-gray-700 dark:tw-text-gray-300">Ahmadu Bello University</div>
+                    </div>
+                </div>
+                <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                    "The interactive quizzes and 24/7 tutor support gave me the confidence I needed. I can now study pharmacy effectively while managing my part-time job. E seun Academy-X team!"
+                </p>
+            </div>
+    
+            <!-- Testimonial 3 -->
+            <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                        <img src="./assets/images/people/man.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Oluwaseun" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Oluwaseun Adebayo</div>
+                        <div class="tw-text-gray-700 dark:tw-text-gray-300">Pharmacy Board of Nigeria</div>
+                    </div>
+                </div>
+                <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                    "As a professional pharmacist, I recommend Academy-X to all interns. Their modules on stereochemistry are world-class - better than some international courses I've taken. The mobile access makes continuous learning so convenient!"
+                </p>
+            </div>
+    
+            <!-- Testimonial 4 -->
+            <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                        <img src="./assets/images/people/man2.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Ngozi" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Ngozi Eze</div>
+                        <div class="tw-text-gray-700 dark:tw-text-gray-300">University of Nigeria</div>
+                    </div>
+                </div>
+                <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                    "I never thought organic chemistry could be this understandable! The video tutorials break down complex synthesis processes into digestible chunks. My GPA improved from 2.8 to 4.2 in one semester!"
+                </p>
+            </div>
+    
+            <!-- Testimonial 5 -->
+            <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                        <img src="./assets/images/people/women.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Tunde" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Tunde Okafor</div>
+                        <div class="tw-text-gray-700 dark:tw-text-gray-300">Clinical Pharmacist</div>
+                    </div>
+                </div>
+                <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                    "Academy-X's approach to pharmaceutical education is revolutionary for Nigeria. The combination of visual learning and practice questions helped me retain information better than traditional lectures."
+                </p>
+            </div>
+    
+            <!-- Testimonial 6 -->
+            <div class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full">
+                        <img src="./assets/images/people/man.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="Chioma" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-font-semibold">Chioma Nwankwo</div>
+                        <div class="tw-text-gray-700 dark:tw-text-gray-300">PharmD Candidate</div>
+                    </div>
+                </div>
+                <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                    "The community forum saved me during exam preparation. Being able to discuss challenging problems with both peers and tutors made all the difference. Now I'm confidently pursuing my doctorate in pharmacy!"
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-gap-6 tw-place-items-center tw-p-[2%]" id="pricing">
+        <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl">
+            Affordable Learning Plans
+        </h3>
+        
+        <!-- Pricing Tiers -->
+        <div class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+            <!-- Basic Plan -->
+            <div class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px]
+                        tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]">
+                <h3 class="">
+                    <span class="tw-text-5xl max-md:tw-text-3xl tw-font-semibold">₦5,000</span>
+                    <span class="tw-text-2xl tw-text-gray-600 dark:tw-text-gray-300">/mo</span>
+                </h3>
+                <p class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-100">
+                    Perfect for foundational learning
+                </p>
+                <hr />
+                <ul class="tw-mt-4 tw-flex tw-flex-col tw-gap-4 tw-text-base tw-text-gray-800 dark:tw-text-gray-200">
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Full PCH 331 Course Access</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>50+ Video Tutorials</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Weekly Practice Quizzes</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2 ">
+                        <i class="bi bi-check-circle-fill tw-text-gray-400 dark:tw-text-gray-500"></i>
+                        <span>Certificate of Completion</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2 ">
+                        <i class="bi bi-check-circle-fill tw-text-gray-400 dark:tw-text-gray-500"></i>
+                        <span>Priority Tutor Support</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn tw-mt-auto !tw-w-full tw-transition-transform tw-duration-[0.3s] 
+                                hover:tw-scale-x-[1.02] !tw-text-black !tw-bg-transparent !tw-border-[1px]
+                                 tw-border-black dark:tw-border-white dark:!tw-text-white">
+                    Start Learning
+                </a>
+            </div>
+    
+            <!-- Pro Plan (Most Popular) -->
+            <div class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2
+                        tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#595858] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]">
+                <div class="tw-badge tw-mb-2 tw-bg-[#f2f3f4] dark:tw-bg-[#141414]">Most Popular</div>
+                <h3 class="">
+                    <span class="tw-text-5xl max-md:tw-text-3xl tw-font-semibold">₦10,000</span>
+                    <span class="tw-text-2xl tw-text-gray-600 dark:tw-text-gray-300">/mo</span>
+                </h3>
+                <p class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-200">
+                    Complete package for serious students
+                </p>
+                <hr />
+                <ul class="tw-mt-4 tw-flex tw-flex-col tw-gap-4 tw-text-base tw-text-gray-800 dark:tw-text-gray-100">
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>All Basic Plan Features</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>3 Additional Pharmacy Courses</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Downloadable Study Materials</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Exclusive Community Access</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Monthly Live Q&A Sessions</span>
+                    </li>
+                </ul>
+                <a href="#"
+                    class="btn tw-mt-auto !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]">
+                    Boost Your GPA
+                </a>
+            </div>
+    
+            <!-- Premium Plan -->
+            <div class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px]
+                        tw-border-outlineColor dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-bg-white tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]">
+                <h3 class="">
+                    <span class="tw-text-5xl max-md:tw-text-3xl tw-font-semibold">₦20,000</span>
+                    <span class="tw-text-2xl tw-text-gray-600 dark:tw-text-gray-300">/mo</span>
+                </h3>
+                <p class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-100">
+                    Ultimate preparation for top students
+                </p>
+                <hr />
+                <ul class="tw-mt-4 tw-flex tw-flex-col tw-gap-4 tw-text-base tw-text-gray-800 dark:tw-text-gray-200">
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>All Pro Plan Features</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Verified Certifications</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>24/7 Priority Tutor Support</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Career Guidance Sessions</span>
+                    </li>
+                    <li class="tw-flex tw-gap-2">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Exclusive Masterclasses</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] 
+                                hover:tw-scale-x-[1.02] !tw-text-black !tw-bg-transparent 
+                                !tw-border-[1px] tw-border-black dark:tw-border-white dark:!tw-text-white">
+                    Become Top Student
+                </a>
+            </div>
+        </div>
+        
+        <p class="tw-mt-8 tw-text-gray-600 dark:tw-text-gray-400">
+            Special discounts available for Nigerian university students - verify with your .edu.ng email!
+        </p>
+    </section>
+
+    <section class="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]">
+        <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+            FAQs
+        </h3>
+        <div class="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4">
+            <div class="faq tw-w-full">
+                <h4 class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>What is acadx?</span>
+                    <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"></i>
+                </h4>
+                <div class="content max-lg:tw-text-sm">
+                    acadx is an online learning platform designed to help students master challenging courses through expertly crafted video tutorials and resources, starting with PCH 331: Pharmaceutical Organic Chemistry.
+                </div>
+            </div>
+            <hr>
+            <div class="faq tw-w-full">
+                <h4 class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>What courses are available on acadx?</span>
+                    <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"></i>
+                </h4>
+                <div class="content max-lg:tw-text-sm">
+                    Our first course, PCH 331: Pharmaceutical Organic Chemistry, covers topics like the synthesis of organic compounds, introduction to heterocyclic compounds, stereochemistry, and more. More courses will be added soon!
+                </div>
+            </div>
+            <hr>
+            <div class="faq tw-w-full">
+                <h4 class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>Is acadx free?</span>
+                    <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"></i>
+                </h4>
+                <div class="content max-lg:tw-text-sm">
+                    acadx offers a free launch offer for a limited time. After that, users can subscribe to access premium content at an affordable price.
+                </div>
+            </div>
+            <hr>
+            <div class="faq tw-w-full">
+                <h4 class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>How does acadx work?</span>
+                    <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"></i>
+                </h4>
+                <div class="content max-lg:tw-text-sm">
+                    1. Sign Up: Create your account in minutes.<br>
+                    2. Subscribe: Unlock premium content with our affordable plans.<br>
+                    3. Learn: Watch, practice, and excel in your studies.
+                </div>
+            </div>
+            <hr>
+            <div class="faq tw-w-full">
+                <h4 class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg">
+                    <span>How can I stay updated with new courses?</span>
+                    <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"></i>
+                </h4>
+                <div class="content max-lg:tw-text-sm">
+                    Follow us on YouTube (@academyx-m4m), TikTok (academyx.co), or reach out via email at academyxoffice@gmail.com.
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="purple-bg-grad max-md:tw-hidden reveal-up tw-absolute tw-bottom-14 tw-right-[20%] tw-h-[150px] tw-w-[150px] tw-rounded-full"></div>
+    </section>    
+
+    <section
+        class="tw-relative tw-flex tw-p-2  tw-w-full tw-min-h-[60vh]  tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden">
+        <div class="reveal-up tw-w-full tw-h-full tw-min-h-[450px] max-lg:tw-max-w-full tw-rounded-md lg:tw-py-[5%] tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-place-content-center tw-items-center 
+                        tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
+
+            <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal">
+                Learn PCH 331 with expert video tutorials
+            </h3>
+
+            <div class="tw-mt-8 tw-relative tw-flex max-lg:tw-flex-col tw-gap-5">
+
+                <a href="https://www.youtube.com/@AcademyX-m4m" class="btn  reveal-up !tw-rounded-full !tw-p-4 tw-font-medium">
+                    Launch Course
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section
+        class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2">
+        <div
+            class="tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 
+                        tw-rounded-lg tw-bg-[#F6F7FB] dark:tw-bg-[#171717] tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col">
+            <div class="tw-flex tw-flex-col max-lg:tw-text-center tw-gap-1">
+                <h2 class="tw-text-2xl tw-text-gray-800 dark:tw-text-gray-200 max-md:tw-text-xl">
+                    Join our newsletter
+                </h2>
+                <div class="tw-text-gray-700 dark:tw-text-gray-300">Get product insights and updates.</div>
+            </div>
+
+            <div class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2">
+                <input type="email" class="input tw-h-full tw-w-full !tw-border-gray-600 tw-p-2 tw-outline-none"
+                    placeholder="email" />
+                <a class="btn !tw-rounded-full !tw-border-[1px] !tw-text-black !tw-border-solid !tw-border-black  dark:!tw-text-white
+                            dark:!tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                    href="">
+                    Signup
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-px-[10%] 
+                    tw-text-black dark:tw-text-white max-md:tw-flex-col">
+        <div class="tw-flex max-md:tw-flex-col max-md:tw-gap-6 tw-gap-3 tw-w-full tw-place-content-around">
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full">
+                <a href="#" class="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6">
+                    <img src="./assets/logo/logo.png" alt="AcadX logo" srcset="" class="tw-max-w-[120px] dark:tw-invert" />
+                    <div class="tw-max-w-[120px] tw-text-center tw-text-3xl tw-h-fit">
+                        AcadX
+                    </div>
+                </a>
+                <div class="tw-flex tw-gap-4 tw-text-lg">
+                    <a href="https://youtube.com/@academyx-m4m?si=aLgwrS6_580zP4nI" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="https://tiktok.com/@academyx.co" aria-label="TikTok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-flex max-md:tw-flex-col tw-flex-wrap tw-gap-6 tw-h-full tw-w-full tw-justify-around">
+                <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                    <h2 class="tw-text-xl">Resources</h2>
+                    <div class="tw-flex tw-flex-col tw-gap-3">
+                        <a href="#" class="footer-link">Getting started</a>
+                        <a href="#" class="footer-link">Course Catalog</a>
+                        <a href="#" class="footer-link">FAQs</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                    </div>
+                </div>
+
+                <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                    <h2 class="tw-text-xl">Company</h2>
+                    <div class="tw-flex tw-flex-col tw-gap-3">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Support</a>
+                        <a href="#" class="footer-link">Blog</a>
+                    </div>
+                </div>
+
+                <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                    <h2 class="tw-text-xl">Legal</h2>
+                    <div class="tw-flex tw-flex-col tw-gap-3">
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Content Protection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="tw-mt-8">
+        <div class="tw-mt-2 tw-flex tw-gap-2 tw-flex-col tw-text-gray-700 dark:tw-text-gray-300 tw-place-items-center 
+                    tw-text-[12px] tw-w-full tw-text-center tw-place-content-around">
+            <span>Copyright &#169; 2023-2025 AcadX</span>
+            <span>All trademarks and copyrights belong to their respective owners.</span>
+            <span>Contact us: <a href="mailto:academyxoffice@gmail.com">academyxoffice@gmail.com</a></span>
+            <span>Phone: 08082010262</span>
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
+    integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./scripts/components.js"></script>
+<script src="./index.js"></script>
+
+<!-- By Paul: https://github.com/PaulleDemon -->
+
+</html>
